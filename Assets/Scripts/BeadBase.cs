@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BeadBase : MonoBehaviour {
 
-    public int number;
+    public int totalBeads;
     public int multiplier;
     public float magnitude;
     protected Controller ctrl;

@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 67072344}
   - component: {fileID: 67072343}
   - component: {fileID: 67072346}
+  - component: {fileID: 67072347}
   m_Layer: 0
   m_Name: one hundred million
   m_TagString: Untagged
@@ -526,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 9
   magnitude: 0.735411
 --- !u!23 &67072344
@@ -584,8 +585,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &67072347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67072341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: 0.0000009536743, y: 0.00000074505806, z: -0.00000052154064}
 --- !u!1 &72347771
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &81574607
 MeshRenderer:
@@ -923,6 +936,7 @@ GameObject:
   - component: {fileID: 102887592}
   - component: {fileID: 102887591}
   - component: {fileID: 102887594}
+  - component: {fileID: 102887595}
   m_Layer: 0
   m_Name: million
   m_TagString: Untagged
@@ -954,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 7
   magnitude: 0.735411
 --- !u!23 &102887592
@@ -1012,8 +1026,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &102887595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102887589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: -0.00000071525574, y: 0.00000074505806, z: -0.00000052154064}
 --- !u!1 &104870381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 9
   magnitude: 1.52
 --- !u!1 &130289667
@@ -1487,7 +1513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 4
   magnitude: 1.52
 --- !u!1 &246307141
@@ -1533,7 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &246307144
 MeshRenderer:
@@ -1821,7 +1847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &278770788
 MeshRenderer:
@@ -2513,7 +2539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &346149047
 MeshRenderer:
@@ -2614,7 +2640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &360822883
 MeshRenderer:
@@ -2790,7 +2816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 7
   magnitude: 1.52
 --- !u!1 &397314584
@@ -3093,7 +3119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &436133826
 MeshRenderer:
@@ -3381,6 +3407,7 @@ GameObject:
   - component: {fileID: 495826861}
   - component: {fileID: 495826860}
   - component: {fileID: 495826863}
+  - component: {fileID: 495826864}
   m_Layer: 0
   m_Name: tens of billion
   m_TagString: Untagged
@@ -3412,7 +3439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 11
   magnitude: 0.735411
 --- !u!23 &495826861
@@ -3470,8 +3497,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &495826864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495826858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: 0.0000019073486, y: 0.00000071525574, z: -0.00000052154064}
 --- !u!1 &506793219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,7 +3629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 1
   magnitude: 1.52
 --- !u!1 &530717100
@@ -3858,7 +3897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &544335901
 MeshRenderer:
@@ -4181,7 +4220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &596696692
 MeshRenderer:
@@ -4430,7 +4469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &641163528
 MeshRenderer:
@@ -4605,7 +4644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &652973511
 MeshRenderer:
@@ -5002,8 +5041,9 @@ GameObject:
   - component: {fileID: 694714895}
   - component: {fileID: 694714897}
   - component: {fileID: 694714896}
+  - component: {fileID: 694714898}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Client
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5066,6 +5106,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 694714894}
+--- !u!114 &694714898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 694714894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4975c0594af78e84d8766b97c24076e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCount: {fileID: 694714896}
 --- !u!1 &702650333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,7 +5301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &719679015
 MeshRenderer:
@@ -5605,7 +5657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &754010073
 MeshRenderer:
@@ -6003,7 +6055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 3
   magnitude: 1.52
 --- !u!1 &801576888
@@ -6197,7 +6249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &805794382
 MeshRenderer:
@@ -6372,7 +6424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &828892098
 MeshRenderer:
@@ -6547,7 +6599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &830175104
 MeshRenderer:
@@ -6722,7 +6774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &878723942
 MeshRenderer:
@@ -6897,7 +6949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &894183836
 MeshRenderer:
@@ -7464,7 +7516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &944675826
 MeshRenderer:
@@ -7713,7 +7765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &954463241
 MeshRenderer:
@@ -7962,7 +8014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &968116878
 MeshRenderer:
@@ -8466,7 +8518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &1042308626
 MeshRenderer:
@@ -8536,6 +8588,7 @@ GameObject:
   - component: {fileID: 1042663153}
   - component: {fileID: 1042663152}
   - component: {fileID: 1042663155}
+  - component: {fileID: 1042663156}
   m_Layer: 0
   m_Name: myriad
   m_TagString: Untagged
@@ -8567,7 +8620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 5
   magnitude: 0.735411
 --- !u!23 &1042663153
@@ -8625,8 +8678,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1042663156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042663150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055029, y: 0.52816254, z: 1.2856696}
+  m_Center: {x: -0.0000021457674, y: 0.0000007599592, z: -0.00000052154064}
 --- !u!1 &1057381662
 GameObject:
   m_ObjectHideFlags: 0
@@ -8836,7 +8901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &1084438980
 MeshRenderer:
@@ -8906,6 +8971,7 @@ GameObject:
   - component: {fileID: 1106403466}
   - component: {fileID: 1106403465}
   - component: {fileID: 1106403468}
+  - component: {fileID: 1106403469}
   m_Layer: 0
   m_Name: thousand
   m_TagString: Untagged
@@ -8937,7 +9003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 4
   magnitude: 0.735411
 --- !u!23 &1106403466
@@ -8995,8 +9061,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1106403469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106403463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055023, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: -0.0000026226044, y: 0.0000007748604, z: -0.00000052154064}
 --- !u!1 &1122807395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9040,7 +9118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &1122807398
 MeshRenderer:
@@ -9172,7 +9250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &1127200260
 MeshRenderer:
@@ -9538,6 +9616,7 @@ GameObject:
   - component: {fileID: 1177055914}
   - component: {fileID: 1177055913}
   - component: {fileID: 1177055916}
+  - component: {fileID: 1177055917}
   m_Layer: 0
   m_Name: lakh
   m_TagString: Untagged
@@ -9569,7 +9648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 6
   magnitude: 0.735411
 --- !u!23 &1177055914
@@ -9627,8 +9706,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1177055917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177055911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: -0.0000011920929, y: 0.00000074505806, z: -0.00000052154064}
 --- !u!1 &1183827807
 GameObject:
   m_ObjectHideFlags: 0
@@ -9894,7 +9985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &1192362039
 MeshRenderer:
@@ -10143,7 +10234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &1208984136
 MeshRenderer:
@@ -10213,6 +10304,7 @@ GameObject:
   - component: {fileID: 1214190791}
   - component: {fileID: 1214190790}
   - component: {fileID: 1214190793}
+  - component: {fileID: 1214190794}
   m_Layer: 0
   m_Name: hundred
   m_TagString: Untagged
@@ -10244,7 +10336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 3
   magnitude: 0.735411
 --- !u!23 &1214190791
@@ -10302,8 +10394,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1214190794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214190788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: -0.0000035762787, y: 0.0000007748604, z: -0.00000052154064}
 --- !u!1 &1219851806
 GameObject:
   m_ObjectHideFlags: 0
@@ -11015,6 +11119,7 @@ GameObject:
   - component: {fileID: 1298655781}
   - component: {fileID: 1298655780}
   - component: {fileID: 1298655783}
+  - component: {fileID: 1298655784}
   m_Layer: 0
   m_Name: ten
   m_TagString: Untagged
@@ -11046,7 +11151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 2
   magnitude: 0.735411
 --- !u!23 &1298655781
@@ -11104,8 +11209,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1298655784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298655778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.52816254, z: 1.2856696}
+  m_Center: {x: -0.0000038146973, y: 0.00000078976154, z: -0.00000052154064}
 --- !u!1 &1298709044
 GameObject:
   m_ObjectHideFlags: 0
@@ -11652,7 +11769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &1369559543
 MeshRenderer:
@@ -11901,7 +12018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &1386337523
 MeshRenderer:
@@ -12504,6 +12621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4975c0594af78e84d8766b97c24076e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalCount: {fileID: 0}
 --- !u!4 &1504206220
 Transform:
   m_ObjectHideFlags: 0
@@ -12708,7 +12826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &1550448931
 MeshRenderer:
@@ -13000,6 +13118,7 @@ GameObject:
   - component: {fileID: 1575311321}
   - component: {fileID: 1575311320}
   - component: {fileID: 1575311323}
+  - component: {fileID: 1575311324}
   m_Layer: 0
   m_Name: individual
   m_TagString: Untagged
@@ -13031,7 +13150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 1
   magnitude: 0.735411
 --- !u!23 &1575311321
@@ -13089,8 +13208,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1575311324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575311318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.52816254, z: 1.2856696}
+  m_Center: {x: -0.0000052452087, y: 0.00000078976154, z: -0.00000052154064}
 --- !u!1 &1589358278
 GameObject:
   m_ObjectHideFlags: 0
@@ -13198,7 +13329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &1594468766
 MeshRenderer:
@@ -13373,7 +13504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &1607671388
 MeshRenderer:
@@ -13475,7 +13606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 5
   magnitude: 1.52
 --- !u!1 &1620436122
@@ -13743,7 +13874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &1643239766
 MeshRenderer:
@@ -13992,7 +14123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &1663364246
 MeshRenderer:
@@ -14206,7 +14337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &1691871829
 MeshRenderer:
@@ -14604,7 +14735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 8
   magnitude: 1.52
 --- !u!1 &1738949154
@@ -14725,7 +14856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 11
   magnitude: 1.52
 --- !u!1 &1746043707
@@ -14920,7 +15051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 10
   magnitude: 1.52
 --- !u!1 &1767869651
@@ -15040,7 +15171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &1768912202
 MeshRenderer:
@@ -15184,6 +15315,7 @@ GameObject:
   - component: {fileID: 1775575952}
   - component: {fileID: 1775575951}
   - component: {fileID: 1775575954}
+  - component: {fileID: 1775575955}
   m_Layer: 0
   m_Name: billion
   m_TagString: Untagged
@@ -15215,7 +15347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 10
   magnitude: 0.735411
 --- !u!23 &1775575952
@@ -15273,8 +15405,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1775575955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775575949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: 0.0000014305115, y: 0.00000074505806, z: -0.00000052154064}
 --- !u!1 &1796713787
 GameObject:
   m_ObjectHideFlags: 0
@@ -15318,7 +15462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &1796713790
 MeshRenderer:
@@ -15567,7 +15711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 1
   state: 1
 --- !u!23 &1807209459
 MeshRenderer:
@@ -15850,7 +15994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 6
   magnitude: 1.52
 --- !u!1 &1855118727
@@ -16044,7 +16188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &1878401075
 MeshRenderer:
@@ -16294,7 +16438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4129aedbb6f0784180650f50d296ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 2
   magnitude: 1.52
 --- !u!1 &1923428070
@@ -16414,7 +16558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &1943088305
 MeshRenderer:
@@ -16754,6 +16898,7 @@ GameObject:
   - component: {fileID: 1994471735}
   - component: {fileID: 1994471734}
   - component: {fileID: 1994471737}
+  - component: {fileID: 1994471738}
   m_Layer: 0
   m_Name: tens of millions
   m_TagString: Untagged
@@ -16785,7 +16930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233046b97e5500645ac6b3ad6869cf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  totalBeads: 4
   multiplier: 8
   magnitude: 0.735411
 --- !u!23 &1994471735
@@ -16843,8 +16988,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 0
   state: 0
+--- !u!65 &1994471738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1994471732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3055035, y: 0.5281625, z: 1.2856696}
+  m_Center: {x: -8.077936e-30, y: 0.00000074505806, z: -0.00000052154064}
 --- !u!1 &2016300833
 GameObject:
   m_ObjectHideFlags: 0
@@ -16962,7 +17119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &2031181119
 MeshRenderer:
@@ -17337,7 +17494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 2
   state: 1
 --- !u!23 &2058470336
 MeshRenderer:
@@ -17718,7 +17875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 3
   state: 1
 --- !u!23 &2089619230
 MeshRenderer:
@@ -17819,7 +17976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &2100651341
 MeshRenderer:
@@ -17920,7 +18077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec461726a6bd36c42907ed5cef07df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
+  count: 4
   state: 1
 --- !u!23 &2107169477
 MeshRenderer:

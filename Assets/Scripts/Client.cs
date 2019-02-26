@@ -1,21 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Client : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    private static Client instance = null;
+    private double startNumber = 0;
+    public Text totalCount;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    public static Client Instance()
+    {
+        //if (instance == null)
+        //{
+        //    instance = new Client();
+        //}
+        return instance;
+    }
+
+    public void Calculate(double number)
+    {
         Operation oper;
         oper = OperationFactory.createOperate("+");
-        oper.NumberA = 1;
-        oper.NumberB = 2;
+        oper.NumberA = startNumber;
+        oper.NumberB = number;
         double result = oper.GetResult();
+        startNumber = result;
+        //totalCount.text = "111"/*result.ToString()*/;
         print(result);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 }

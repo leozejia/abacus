@@ -7,6 +7,7 @@ public class BeadDown : BeadBase
 {
     private List<bool> doneBead = new List<bool>();
     private List<Vector3> startPosition = new List<Vector3>();
+    private double total = 0;
 
     private void Start()
     {
@@ -37,11 +38,14 @@ public class BeadDown : BeadBase
                 doneBead[i] = true;
             }
         }
+        total = 0;
+        Total(number);
+        Client.Instance().Calculate(total);
     }
 
     public void Down(int number)
     {
-        for (int i = 0; i < number; i++)
+        for (int i = number-1; i < totalBeads; i++)
         {
             if (doneBead[i] == true)
             {
@@ -58,5 +62,10 @@ public class BeadDown : BeadBase
             transform.GetChild(i).transform.DOLocalMove(startPosition[i], 0.15f);
             doneBead[i] = false;
         }
+    }
+
+    private void Total(int _number)
+    {
+        total = _number * Mathf.Pow(10, multiplier - 1);
     }
 }

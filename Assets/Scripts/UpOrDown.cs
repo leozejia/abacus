@@ -6,7 +6,8 @@ public class UpOrDown : MonoBehaviour {
 
     private BeadUp beadUp;
     private BeadDown beadDown;
-    public int number;
+    //toss beads number
+    public int count;
 
     public enum State
     {
@@ -21,18 +22,14 @@ public class UpOrDown : MonoBehaviour {
         switch (state)
         {
             case State.up:
-                beadUp = transform.parent.GetComponent<BeadUp>();
+                beadUp = transform.GetComponent<BeadUp>();
                 break;
             case State.down:
-                beadDown = transform.GetComponent<BeadDown>();
+                beadDown = transform.parent.GetComponent<BeadDown>();
                 break;
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-    }
 
     public void SendUp()
     {
@@ -42,7 +39,7 @@ public class UpOrDown : MonoBehaviour {
                 beadUp.Up();
                 break;
             case State.down:
-                beadDown.Up(number);
+                beadDown.Up(count);
                 break;
         }
     }
@@ -55,7 +52,7 @@ public class UpOrDown : MonoBehaviour {
                 beadUp.Down();
                 break;
             case State.down:
-                beadDown.Down(number);
+                beadDown.Down(count);
                 break;
         }
     }

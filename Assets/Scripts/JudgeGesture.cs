@@ -8,6 +8,7 @@ public class JudgeGesture : MonoBehaviour {
     private Vector3 nowPosition;
     private float yMoveDistance;
     private bool isSelected = false;
+    private GameObject hitObject;
 
 	// Use this for initialization
 	void Start () {
@@ -16,26 +17,48 @@ public class JudgeGesture : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.touchCount <= 0)
+        //Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        //if (Input.GetTouch(0).phase == TouchPhase.Began&& Physics.Raycast(ray, out hit, 100))
+        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit, 100))
         {
-            isSelected = false;
-            return;
+            isSelected = true;
+            hitObject = hit.transform.gameObject;
+            startPosition = Camera.main.WorldToScreenPoint(hit.point);
+            //print("StartPosition:" + startPosition);
         }
-        if (Input.touchCount >= 0)
+        //nowPosition = Input.GetTouch(0).position;
+        if (Input.GetMouseButton(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100))
+            nowPosition = Input.mousePosition;
+            yMoveDistance = nowPosition.y - startPosition.y;
+            //print("yMoveDistance" + yMoveDistance);
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (yMoveDistance > 0)
             {
-                
+                if (hitObject != null)
+                {
+                    hitObject.GetComponent<UpOrDown>().SendUp();
+                    hitObject = null;
+                }
             }
+            if (yMoveDistance < 0)
+            {
+                if (hitObject != null)
+                {
+                    hitObject.GetComponent<UpOrDown>().SendDown();
+                    hitObject = null;
+                }
+            }
+            startPosition = nowPosition;
         }
 
-        if (Input.GetTouch(0).phase == TouchPhase.Began)
-            startPosition = Input.GetTouch(0).position;
-        nowPosition = Input.GetTouch(0).position;
-        yMoveDistance = (nowPosition - startPosition).y;
-        print(yMoveDistance);
- 
+        if (startPosition == nowPosition)
+        {
+            return;
+        }
     }
 }

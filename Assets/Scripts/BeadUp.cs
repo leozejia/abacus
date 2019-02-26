@@ -26,6 +26,7 @@ public class BeadUp : BeadBase
 
     public void Up()
     {
+        print("Up");
         if (doneBead == true)
         {
             transform.DOLocalMove(startPosition, 0.1f);
@@ -35,6 +36,7 @@ public class BeadUp : BeadBase
 
     public void Down()
     {
+        print("Down");
         if (doneBead == false)
         {
             transform.DOLocalMoveY(transform.localPosition.y - magnitude, 0.1f);
