@@ -7,7 +7,6 @@ public class JudgeGesture : MonoBehaviour {
     private Vector3 startPosition;
     private Vector3 nowPosition;
     private float yMoveDistance;
-    private bool isSelected = false;
     private GameObject hitObject;
 
 	// Use this for initialization
@@ -23,7 +22,6 @@ public class JudgeGesture : MonoBehaviour {
         //if (Input.GetTouch(0).phase == TouchPhase.Began&& Physics.Raycast(ray, out hit, 100))
         if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit, 100))
         {
-            isSelected = true;
             hitObject = hit.transform.gameObject;
             startPosition = Camera.main.WorldToScreenPoint(hit.point);
             //print("StartPosition:" + startPosition);

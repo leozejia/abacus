@@ -20,5 +20,11 @@ public class Controller : MonoBehaviour {
     public void Reset()
     {
         ResetAll();
+        Client.GetInstance().ResetCount();
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
     }
 }

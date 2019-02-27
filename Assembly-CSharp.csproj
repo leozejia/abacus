@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\BeadBase.cs" />
     <Compile Include="Assets\Scripts\BeadDown.cs" />
     <Compile Include="Assets\Scripts\BeadUp.cs" />

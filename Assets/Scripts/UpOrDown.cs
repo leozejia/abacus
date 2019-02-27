@@ -30,7 +30,6 @@ public class UpOrDown : MonoBehaviour {
         }
     }
 
-
     public void SendUp()
     {
         switch (state)

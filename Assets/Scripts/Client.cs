@@ -6,15 +6,19 @@ using UnityEngine.UI;
 public class Client : MonoBehaviour {
 
     private static Client instance = null;
-    private double startNumber = 0;
-    public Text totalCount;
+
+    private Client()
+    {
+
+    }
 
     private void Awake()
     {
         instance = this;
+        totalCount = GameObject.Find("Client").GetComponent<Text>();
     }
 
-    public static Client Instance()
+    public static Client GetInstance()
     {
         //if (instance == null)
         //{
@@ -22,6 +26,9 @@ public class Client : MonoBehaviour {
         //}
         return instance;
     }
+
+    private double startNumber = 0;
+    private Text totalCount;
 
     public void Calculate(double number)
     {
@@ -31,7 +38,13 @@ public class Client : MonoBehaviour {
         oper.NumberB = number;
         double result = oper.GetResult();
         startNumber = result;
-        //totalCount.text = "111"/*result.ToString()*/;
-        print(result);
+        totalCount.text = result.ToString();
+        //print(result);
+    }
+
+    public void ResetCount()
+    {
+        startNumber = 0;
+        totalCount.text = startNumber.ToString();
     }
 }
