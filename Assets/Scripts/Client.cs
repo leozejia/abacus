@@ -15,7 +15,7 @@ public class Client : MonoBehaviour {
     private void Awake()
     {
         instance = this;
-        totalCount = GameObject.Find("Client").GetComponent<Text>();
+        totalCount = GameObject.Find("Client");
     }
 
     public static Client GetInstance()
@@ -28,7 +28,7 @@ public class Client : MonoBehaviour {
     }
 
     private double startNumber = 0;
-    private Text totalCount;
+    private GameObject totalCount;
 
     public void Calculate(double number)
     {
@@ -38,13 +38,13 @@ public class Client : MonoBehaviour {
         oper.NumberB = number;
         double result = oper.GetResult();
         startNumber = result;
-        totalCount.text = result.ToString();
+        totalCount.GetComponent<Text>().text = result.ToString();
         //print(result);
     }
 
     public void ResetCount()
     {
         startNumber = 0;
-        totalCount.text = startNumber.ToString();
+        totalCount.GetComponent<Text>().text = startNumber.ToString();
     }
 }

@@ -1,21 +1,12 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	    	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public event Action ResetAll;
+
+    public Text client;
 
     public void Reset()
     {
@@ -26,5 +17,13 @@ public class Controller : MonoBehaviour {
     public void QuitApp()
     {
         Application.Quit();
+    }
+
+    public void AppearText()
+    {
+        if (client.enabled == false)
+            client.enabled = true;
+        else
+            client.enabled = false;
     }
 }
